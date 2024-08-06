@@ -1,68 +1,58 @@
-Zomato Dining Reservation System Backend
+# Zomato Dining Reservation System Backend
+
 This is a backend API for a dining reservation system, providing functionality for user authentication, dining place management, and reservations.
 
-Table of Contents
-Installation
-Environment Variables
-API Endpoints
-Authentication
-Signup
-Login
-Dining Places
-Create Dining Place
-Search Dining Places
-Get Dining Place Availability
-Book Dining Place
-Database Schema
-Usage
-Contributing
-License
-Installation
-Clone the repository:
+Clone the repository: git clone https://github.com/soumilaggarwal2003/Dining-Reservation-System.git
 
-bash
-Copy code
-git clone <repository_url>
-cd <repository_directory>
-Install dependencies:
+# Installation:
 
-bash
-Copy code
 npm install
+
 Create a .env file in the root directory and add your environment variables (see below).
 
-Run the application:
-
-bash
-Copy code
-npm start
-Environment Variables
 Create a .env file in the root directory and add the following variables:
 
-makefile
-Copy code
 DB_HOST=localhost
+
 DB_USER=root
+
 DB_PASSWORD=your_database_password
+
 DB_NAME=zomato_reservation_system
+
 JWT_SECRET=your_jwt_secret_key
+
 PORT=3000
-API Endpoints
+
+
+# API Endpoints
+
 Authentication
+
 Signup
+
 Endpoint: /api/auth/signup
+
 Method: POST
+
 Request Body:
+
 json
-Copy code
+
 {
+
   "username": "exampleuser",
+  
   "password": "examplepassword",
+  
   "email": "user@example.com"
+
 }
+
 Response:
+
 json
-Copy code
+
 {
   "status": "Account successfully created",
   "status_code": 201,
