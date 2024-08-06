@@ -253,4 +253,4 @@ booked_slots: Stores reservations with references to users and dining_places.
 
 # Start the server using:
 node app.js
-Interact with the API using tools like Postman or cURL to test various endpoints.
+
